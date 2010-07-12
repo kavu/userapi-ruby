@@ -5,12 +5,15 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "userapi-ruby"
-    gem.summary = %Q{Ruby Gem for interacting with VKontakte.Ru User API}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Ruby Gem for interacting with VKontakte.Ru UserAPI}
+    gem.description = %Q{UserAPI is an application programming interface (API), which enables anyone to create social networks and other projects based on Vkontakte data storage. And I have a little problem - there is no Ruby Gem to work with this API. So this Gem will realize some features of UserAPI}
     gem.email = "kavu13@gmail.com"
     gem.homepage = "http://github.com/kavu/userapi-ruby"
     gem.authors = ["Max Riveiro"]
+    gem.add_dependency "mechanize", ">= 1.0.0"
+    gem.add_dependency "httparty", ">= 0.6.1"
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.files = FileList['lib/**/*.rb']
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
