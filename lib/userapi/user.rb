@@ -1,9 +1,6 @@
 # encoding: utf-8
 
-require 'httparty'
-require 'mechanize'
 require 'json'
-require 'singleton'
 
 module VK
   class User
