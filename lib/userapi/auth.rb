@@ -20,7 +20,11 @@ module VK
         @sid = /.*;sid=(\w*)$/.match(response.response.header['location'])[1]
         @user_id = /remixmid=(\d+)/.match(response.response.header['set-cookie'])[1]
         return true
+      else
+        raise VK::AuthFail
       end
     end
   end
+
+  class AuthFail < Exception; end
 end
