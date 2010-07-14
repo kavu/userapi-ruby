@@ -12,6 +12,7 @@ begin
     gem.authors = ["Max Riveiro"]
     gem.add_dependency "httparty", ">= 0.6.1"
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_development_dependency "fakeweb", ">= 1.2.8"
     gem.files = FileList['lib/**/*.rb']
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
