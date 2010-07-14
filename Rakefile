@@ -10,7 +10,6 @@ begin
     gem.email = "kavu13@gmail.com"
     gem.homepage = "http://github.com/kavu/userapi-ruby"
     gem.authors = ["Max Riveiro"]
-    gem.add_dependency "mechanize", ">= 1.0.0"
     gem.add_dependency "httparty", ">= 0.6.1"
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.files = FileList['lib/**/*.rb']
