@@ -6,9 +6,4 @@ require 'webmock/rspec'
 
 require 'userapi'
 
-require 'spec'
-require 'spec/autorun'
-
-Spec::Runner.configure do |config|
-  config.include WebMock
-end
+include WebMock
