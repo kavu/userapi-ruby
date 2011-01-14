@@ -11,6 +11,10 @@ module VK
       @id = id
     end
 
+    def user_id(p)
+      123 if p == 1
+    end
+
     def method_missing(method, *args)
       JSON.parse(self.class.get "/data", :query => {:act => method, :id => @id, :sid => VK::Auth.sid})
     end
